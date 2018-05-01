@@ -26,4 +26,13 @@
 }
 
 
+- (IBAction)TheSwitch:(id)sender {
+    if (self.SwitchButton.on) {
+        self.Label.text = @"The switch is on";
+        self.Button.enabled = YES;
+    } else {
+        self.Label.text = @"The switch is off";
+        self.Button.enabled = NO;
+    }
+}
 @end
